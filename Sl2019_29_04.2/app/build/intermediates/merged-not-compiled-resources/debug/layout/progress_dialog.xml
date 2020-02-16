@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="475dp"
+    android:layout_height="280dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvProgressTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#2a4795"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <Button
+            android:id="@+id/btStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_stop"
+            android:layout_gravity="center_vertical|right"
+            android:visibility="gone"
+            android:padding="7dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_only_frame_selector"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_width"
+        android:background="@drawable/reg_divider"></View>
+
+    <TextView
+        android:id="@+id/tvProgressMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25sp" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        >
+
+        <ProgressBar
+            android:indeterminateDrawable="@anim/progress_bar"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView android:id="@+id/tvAddition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_gravity="bottom"
+        android:gravity="right|bottom"
+        android:layout_marginRight="5dp"
+        />
+</LinearLayout>

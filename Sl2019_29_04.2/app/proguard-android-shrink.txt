@@ -1,0 +1,117 @@
+-ignorewarnings
+
+-printusage unused.txt
+
+-dontwarn com.google.android.gms.**
+-dontwarn javax.annotation.**
+-dontwarn javax.inject.**
+-dontwarn sun.misc.Unsafe
+-dontwarn com.google.common.collect.MinMaxPriorityQueue
+-dontwarn org.xmlpull.v1.**
+-dontwarn com.sybase.mo.**
+-dontwarn android.support.v4.**
+
+
+#-dontshrink
+-dontobfuscate
+-dontpreverify
+-dontoptimize
+-dontpreverify
+-dontusemixedcaseclassnames
+
+-keepattributes *Annotation*
+
+#-verbose
+
+-dontnote com.android.vending.licensing.ILicensingService
+
+# Keep - Library. Keep all public and protected classes, fields, and methods.
+
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keep public class com.google.vending.licensing.ILicensingService
+
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keep public class android.os.CancellationSignal
+
+-keep public class android.database.Cursor
+
+-keep class com.j256.**
+-keepclassmembers class com.j256.** { *; }
+-keep enum com.j256.**
+-keepclassmembers enum com.j256.** { *; }
+-keep interface com.j256.**
+-keepclassmembers interface com.j256.** { *; }
+
+# For native methods, see http://proguard.sourceforge.net/manual/examples.html#native
+
+ -keep class android.database.** {
+    <fields>;
+    <methods>;
+ }
+
+-keep class ru.gkm.mms.** {
+    <fields>;
+    <methods>;
+}
+
+
+-keep class com.ianywhere.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.sybase.** {
+    <fields>;
+    <methods>;
+}
+
+
+-keep class com.sap.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class android.support.v4.** {
+    <fields>;
+    <methods>;
+}
+
+
+
+-keep class org.** {
+    <fields>;
+    <methods>;
+}
+
+-keep class net.sourceforge.zbar.** {
+    <fields>;
+    <methods>;
+
+}
+
+
+

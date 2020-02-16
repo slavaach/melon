@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="megapolis_green">#71b649</color>
+    <color name="megapolis_red">#ed5c5f</color>
+    <color name="bg">#FFFFFFFF</color>
+    <color name="disabled_text">#909fa4</color>
+    <color name="megapolis_blue">#2d4897</color>
+    <color name="test_yellow">#ffff00</color>
+    <color name="c_error">#FF0000</color>
+
+
+</resources>
